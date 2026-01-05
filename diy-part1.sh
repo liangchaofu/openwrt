@@ -18,3 +18,5 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 git clone https://github.com/liangchaofu/package.git package/lcf
+sed '109c\cp $(TOPDIR)/.vermagic $(LINUX_DIR)/.vermagic/g' /include/kernel-defaults.mk
+echo "5a722da41bc36de95a7195be6fce1b45" > .vermagic
