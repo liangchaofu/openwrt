@@ -16,6 +16,9 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
   REPO_TAG: v21.02.7
@@ -31,8 +34,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-22.04
-    permissions:
-      contents: write
 
     steps:
     - name: Checkout
