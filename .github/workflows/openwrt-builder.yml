@@ -91,6 +91,7 @@ jobs:
         rm -rf /feeds/luci/collections/luci-lib-docker
         rm -rf /feeds/packages/net/shadowsocks-libev
         rm -rf /feeds/packages/net/kcptun
+        cp -f /packages/lcf/kernel-defaults.mk /include/kernel-defaults.mk
         echo "5a722da41bc36de95a7195be6fce1b45" > .vermagic
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
