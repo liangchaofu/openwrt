@@ -92,8 +92,7 @@ jobs:
         rm -rf /openwrt/feeds/packages/net/shadowsocks-libev
         rm -rf /openwrt/feeds/packages/net/kcptun
         sed '109c\cp $(TOPDIR)/.vermagic $(LINUX_DIR)/.vermagic' /openwrt/include/kernel-defaults.mk
-echo "5a722da41bc36de95a7195be6fce1b45" > .vermagic
-
+        echo "5a722da41bc36de95a7195be6fce1b45" > .vermagic
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
