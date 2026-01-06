@@ -87,10 +87,10 @@ jobs:
         cd openwrt
         make defconfig
         make download -j8
-        rm -f /openwrt/feeds/luci/applications/luci-app-dockerman
-        rm -f /openwrt/feeds/luci/libs/luci-lib-docker
-        rm -f /openwrt/feeds/packages/net/shadowsocks-libev
-        rm--f /openwrt/feeds/packages/net/kcptun
+        rm -rf /openwrt/feeds/luci/applications/luci-app-dockerman
+        rm -rf /openwrt/feeds/luci/libs/luci-lib-docker
+        rm -rf /openwrt/feeds/packages/net/shadowsocks-libev
+        rm -rf /openwrt/feeds/packages/net/kcptun
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
