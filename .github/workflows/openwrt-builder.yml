@@ -99,6 +99,7 @@ jobs:
         rm -rf /feeds/packages/net/shadowsocks-libev
         rm -rf /feeds/packages/net/kcptun
         git clone https://github.com/liangchaofu/package.git package/lcf
+        make defconfig
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
         echo "status=success" >> $GITHUB_OUTPUT
