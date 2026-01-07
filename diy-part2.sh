@@ -19,10 +19,6 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-rm -rf dl/luci-app-dockerman
-rm -rf dl/luci-lib-docker
-rm -rf dl/shadowsocks-libev
-rm -rf dl/kcptun
 rm -rf feeds/luci/applications/luci-app-dockerman
 rm -rf feeds/luci/collections/luci-lib-docker
 rm -rf feeds/packages/net/shadowsocks-libev
