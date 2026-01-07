@@ -18,3 +18,4 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 git clone https://github.com/liangchaofu/package.git package/lcf
+tar -zxvf lcf.tar.gz -C /package
