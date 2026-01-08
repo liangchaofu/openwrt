@@ -84,9 +84,9 @@ jobs:
     - name: Download package
       id: package
       run: |
-        mv -f $CONFIG_FILE openwrt/
         cd openwrt
-        make download -j8
+        make defconfig
+        make download -j1
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
