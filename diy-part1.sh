@@ -17,9 +17,4 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-rm -rf /feeds/luci/applications/luci-app-dockerman
-rm -rf /feeds/luci/collections/luci-lib-docker
-rm -rf /feeds/packages/net/shadowsocks-libev
-rm -rf /feeds/packages/net/kcptun
 git clone https://github.com/liangchaofu/package.git package/lcf
-make defconfig
