@@ -85,8 +85,8 @@ jobs:
       id: package
       run: |
         cd openwrt
-        yes "" | make oldconfig
-        make download -j1 V=s
+        mv -f /workdir/.config /workdir/openwrt/
+        make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
