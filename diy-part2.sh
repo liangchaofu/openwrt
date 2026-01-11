@@ -22,5 +22,5 @@
 cd feeds/luci/applications/luci-app-dockerman && rm -rf ./* && cd ../.. && cd collections/luci-lib-docker && rm -rf ./* && cd ../../.. && cd packages/net/shadowsocks-libev && rm -rf ./* && cd .. && cd kcptun && rm -rf ./*
 mv -vf ../kernel.config ./config/.config
 mv -vf ../.vermagic .
-mv -vf ../kerne-defaults.mk ./include/kerne-defaults.mk
-mv -vf ../Makefile ./package/kernel/linux/Makefile
+mv -vf ../kerne-defaults.mk.txt ./include/kerne-defaults.mk
+mv -vf ../Makefile.txt ./package/kernel/linux/Makefile
