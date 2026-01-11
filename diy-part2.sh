@@ -20,7 +20,7 @@
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 cd feeds/luci/applications/luci-app-dockerman && rm -rf ./* && cd ../.. && cd collections/luci-lib-docker && rm -rf ./* && cd ../../.. && cd packages/net/shadowsocks-libev && rm -rf ./* && cd .. && cd kcptun && rm -rf ./*
-mv -vf /home/runner/work/kernel.config /home/runner/work/openwrt/config/.config
-mv -vf /home/runner/work//.vermagic /home/runner/work/openwrt
-mv -vf /home/runner/work//kernel-defaults.mk.txt /home/runner/work/openwrt/include/kernel-defaults.mk
-mv -vf /home/runner/work//Makefile.txt /home/runner/work/openwrt/package/kernel/linux/Makefile
+mv -vf /home/runner/work/Actions-Openwrt/kernel.config /home/runner/work/Actions-Openwrt/openwrt/config/.config
+mv -vf /home/runner/work/.vermagic /home/runner/work/openwrt
+mv -vf /home/runner/work/kernel-defaults.mk.txt /home/runner/work/openwrt/include/kernel-defaults.mk
+mv -vf /home/runner/work/Makefile.txt /home/runner/work/openwrt/package/kernel/linux/Makefile
