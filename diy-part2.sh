@@ -19,7 +19,7 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-mv -vf ../kernel.config config/.config
+mv -vf /home/runner/work/openwrt/openwrt/kernel.config config/.config
 mv -vf ../.vermagic .
 mv -vf ../kernel-defaults.mk.txt include/kernel-defaults.mk
 mv -vf ../Makefile.txt package/kernel/linux/Makefile
