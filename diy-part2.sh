@@ -23,6 +23,7 @@ mv -vf /home/runner/work/openwrt/openwrt/kernel.config config/.config
 mv -vf /home/runner/work/openwrt/openwrt/vermagic .
 mv -vf /home/runner/work/openwrt/openwrt/kernel-defaults.mk.txt include/kernel-defaults.mk
 mv -vf /home/runner/work/openwrt/openwrt/Makefile.txt package/kernel/linux/Makefile
+mv -vf /home/runner/work/openwrt/openwrt/lcf package
 rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/luci/applications/luci-app-dockerman 
 rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/luci/collections/luci-lib-docker
 rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/packages/net/shadowsocks-libev
