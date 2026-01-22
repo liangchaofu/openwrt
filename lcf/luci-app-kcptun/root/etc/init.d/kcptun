@@ -20,7 +20,6 @@ USE_PROCD=1
 
 KCPTUN=kcptun
 CONFIG_FOLDER=/var/etc/$KCPTUN
-KCPTUN_NFT_RULES=/etc/nftables.d/S99kcptun.nft
 
 if [ -r /usr/share/libubox/jshn.sh ]; then
 	. /usr/share/libubox/jshn.sh
