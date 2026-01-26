@@ -22,8 +22,8 @@
 mv -vf /home/runner/work/openwrt-24/openwrt-24/vermagic .
 mv -vf /home/runner/work/openwrt-24/openwrt-24/kernel-defaults.mk include/kernel-defaults.mk
 mv -vf /home/runner/work/openwrt-24/openwrt-24/Makefile package/kernel/linux/Makefile
-#mv -vf /home/runner/work/openwrt-24/openwrt-24/ipt-lcf package/lcf
-mv -vf /home/runner/work/openwrt-24/openwrt-24/nft-lcf package/lcf
+mv -vf /home/runner/work/openwrt-24/openwrt-24/ipt-lcf package/lcf
+#mv -vf /home/runner/work/openwrt-24/openwrt-24/nft-lcf package/lcf
 rm -rf /home/runner/work/openwrt-24/openwrt-24/openwrt/feeds/luci/applications/luci-app-dockerman 
 rm -rf /home/runner/work/openwrt-24/openwrt-24/openwrt/feeds/luci/collections/luci-lib-docker
 rm -rf /home/runner/work/openwrt-24/openwrt-24/openwrt/feeds/packages/net/kcptun
