@@ -7,5 +7,7 @@ uci -q batch <<-EOF >/dev/null
 	commit ucitrack
 EOF
 
+chmod 0777 /etc/init.d/chinadns-ng
+
 rm -f /tmp/luci-indexcache
 exit 0
