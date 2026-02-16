@@ -19,13 +19,13 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
-mv -vf /home/runner/work/openwrt-21/openwrt-21/kernel.config config/.config
-mv -vf /home/runner/work/openwrt-21/openwrt-21/vermagic .
-mv -vf /home/runner/work/openwrt-21/openwrt-21/kernel-defaults.mk include/kernel-defaults.mk
-mv -vf /home/runner/work/openwrt-21/openwrt-21/Makefile package/kernel/linux/Makefile
-mv -vf /home/runner/work/openwrt-21/openwrt-21/lcf package
-rm -rf /home/runner/work/openwrt-21/openwrt-21/openwrt/feeds/luci/applications/luci-app-shadowsocks-libev
-rm -rf /home/runner/work/openwrt-21/openwrt-21/openwrt/feeds/luci/applications/luci-app-dockerman 
-rm -rf /home/runner/work/openwrt-21/openwrt-21/openwrt/feeds/luci/collections/luci-lib-docker
-rm -rf /home/runner/work/openwrt-21/openwrt-21/openwrt/feeds/packages/net/shadowsocks-libev
-rm -rf /home/runner/work/openwrt-21/openwrt-21/openwrt/feeds/packages/net/kcptun
+mv -vf /home/runner/work/openwrt/openwrt/lcf/op21/kernel.config config/.config
+mv -vf /home/runner/work/openwrt/openwrt/lcf/op21/vermagic .
+mv -vf /home/runner/work/openwrt/openwrt/lcf/op21/kernel-defaults.mk include/kernel-defaults.mk
+mv -vf /home/runner/work/openwrt/openwrt/lcf/op21/Makefile package/kernel/linux/Makefile
+mv -vf /home/runner/work/openwrt/openwrt/package/op21 package/lcf
+rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/luci/applications/luci-app-shadowsocks-libev
+rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/luci/applications/luci-app-dockerman 
+rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/luci/collections/luci-lib-docker
+rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/packages/net/shadowsocks-libev
+rm -rf /home/runner/work/openwrt/openwrt/openwrt/feeds/packages/net/kcptun
