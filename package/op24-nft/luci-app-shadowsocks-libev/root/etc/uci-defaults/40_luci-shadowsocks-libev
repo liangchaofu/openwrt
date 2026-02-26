@@ -1,0 +1,6 @@
+#!/bin/sh
+
+mkdir -p /etc/shadowsocks-libev
+/etc/init.d/rpcd reload
+chmod 777 /etc/init.d/shadowsocks-libev
+exit 0
