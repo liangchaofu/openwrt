@@ -72,6 +72,7 @@ create_config() {
 
 	echo "--sock-buf 10240" >> $config_file
 	echo "--force-sock-buf" >> $config_file
+	echo "--fix-gro" >> $config_file
 }
 
 validate_config_section() {
